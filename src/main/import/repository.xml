@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <duplicate-module-test j:dependencies="default"
+                             j:modulePriority="0"
+                             j:moduleType="module"
+                             j:title="Duplicate Module Test"
+                             jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:hiddenTemplate="false" jcr:primaryType="jnt:template">
+                        <myPageTemplate j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="My Page Template"/>
+                        </myPageTemplate>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <node-type-one firstStringProp="&lt;p&gt;Bla&amp;nbsp;&lt;strong&gt;blabla&lt;/strong&gt;&amp;nbsp;&lt;em&gt;blablabla&lt;/em&gt;&amp;nbsp;!!!&lt;/p&gt;&#xA;"
+                                 jcr:primaryType="mynt:nodeType1"/>
+                        </pagecontent>
+                    </base>
+                </templates>
+                
+            </duplicate-module-test>
+    </modules>
+</content>
